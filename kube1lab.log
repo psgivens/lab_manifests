@@ -1,0 +1,31 @@
+   10  sudo yum update
+   68  sudo yum install open-vm-tools
+
+   43  sudo yum install vim
+   23  mdkir Docker
+   25  cd Docker
+   27  docker run busybox echo "Hello world"
+   28  sudo yum remove docker docker-common docker-selinux docker-engine
+   29  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+
+   30  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+   33  sudo yum install docker-ce
+   34  sudo systemctl start docker
+
+  117  sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/bin/docker-compose
+  129  curl https://raw.githubusercontent.com/docker/labs/master/developer-tools/java/scripts/docker-compose-pull-images.yml -o docker-compose-pull-images.yml
+
+  135  sudo systemctl start docker
+  143  sudo systemctl enable docker
+
+  161  echo "sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose" >> install.log
+
+
+  190  sudo yum install git
+  194  git clone https://github.com/psgivens/lab_manifests.git
+   29  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+   30  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+
+
+
